@@ -5,12 +5,12 @@ def endLeft(img):
   resX = 0
   resY = 0
   frag = False
-  width = img.shape[0]
-  height = img.shape[1]
+  width = img.shape[1]
+  height = img.shape[0]
 
   for w in range(width):
     for h in range(height):
-      if(img[h][w] == 0): 
+      if(img[h][w] == 0):
         resX = w
         resY = h
         frag = True        
@@ -27,8 +27,8 @@ def endRight(img):
   resX = 0
   resY = 0
   frag = False
-  width = img.shape[0]
-  height = img.shape[1]
+  width = img.shape[1]
+  height = img.shape[0]
 
   for w in range(width):
     for h in range(height):
@@ -49,8 +49,8 @@ def endTop(img):
   resX = 0
   resY = 0
   frag = False
-  width = img.shape[0]
-  height = img.shape[1]
+  width = img.shape[1]
+  height = img.shape[0]
 
   for h in range(height):
     for w in range(width):
@@ -71,8 +71,8 @@ def endBottom(img):
   resX = 0
   resY = 0
   frag = False
-  width = img.shape[0]
-  height = img.shape[1]
+  width = img.shape[1]
+  height = img.shape[0]
 
   for h in range(height): 
     for w in range(width):

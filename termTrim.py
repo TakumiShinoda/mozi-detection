@@ -4,8 +4,8 @@ import modules.getEnds as ends
 
 def trim(img, spaceLeft = 0, spaceTop = 0, spaceRight = 0, spaceBottom = 0):
   result = img
-  width = result.shape[0]
-  height = result.shape[1]
+  width = result.shape[1]
+  height = result.shape[0]
   allEnds = ends.getAll(result) 
   trimPos = np.array([0, 0, 0, 0])
  
@@ -28,8 +28,6 @@ def trim(img, spaceLeft = 0, spaceTop = 0, spaceRight = 0, spaceBottom = 0):
     trimPos[3] = 0
   else:
     trimPos[3] = allEnds[3][1] + spaceLeft
-
-  print(trimPos)
 
   result = result[trimPos[1]:trimPos[3], trimPos[0]:trimPos[2]] 
 
